@@ -1,0 +1,72 @@
+# Nombre y descripción actualizados para tu proyecto.
+name: traincoach
+description: "Tu asistente personal de fitness y nutrición."
+
+# Evita la publicación accidental en pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # --- Dependencias Esenciales de la App ---
+  
+  # Iconos de Cupertino para un estilo consistente en iOS.
+  cupertino_icons: ^1.0.8
+
+  # Para formateo de fechas y números.
+  intl: ^0.20.2 
+  
+  # Para la selección de imágenes de perfil.
+  image_picker: ^1.1.2
+  
+  # Gestión de estado principal de la app.
+  provider: ^6.1.2
+  
+  # Para mostrar las páginas web del asistente. ¡Esta es la nueva!
+  webview_flutter: ^4.7.0
+
+  # Para mostrar imágenes de red con caché.
+  cached_network_image: ^3.3.1
+  
+  # Para los anuncios de Google.
+  google_mobile_ads: ^5.1.0
+  
+  # Para guardar pequeñas preferencias del usuario.
+  shared_preferences: ^2.2.3
+  
+  # Para las notificaciones locales (recordatorios).
+  flutter_local_notifications: ^17.2.1
+  timezone: ^0.9.4
+  
+  # --- CONJUNTO DE DEPENDENCIAS DE FIREBASE ---
+  # Se mantienen las necesarias para Auth, Firestore y Storage.
+  firebase_core: ^2.31.0
+  firebase_auth: ^4.19.1
+  cloud_firestore: ^4.17.2
+  firebase_storage: ^11.7.2
+  google_sign_in: ^6.2.1
+  
+  # Para la verificación de la app.
+  firebase_app_check: ^0.2.2+1
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+# Esta es la sección que necesita la sangría correcta.
+# "uses-material-design" y "assets" deben estar al mismo nivel.
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/web/
+

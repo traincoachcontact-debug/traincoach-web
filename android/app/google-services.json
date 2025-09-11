@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "132564343334",
+    "project_id": "traincoach-2ef9d",
+    "storage_bucket": "traincoach-2ef9d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132564343334:android:05735b27be74c0a444a4e7",
+        "android_client_info": {
+          "package_name": "com.example.appgym"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "132564343334-0vfd4mdq9bf41j7eoc44o56ir2fu92uu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.appgym",
+            "certificate_hash": "7a04364e64dee1626faf9a0f315a4d325621ed12"
+          }
+        },
+        {
+          "client_id": "132564343334-iidc2h4eus0unbckfca10moalk9bcu8u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFaz-CwdwBgIbo6TRjR_LT0rgyGi2TOHI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "132564343334-iidc2h4eus0unbckfca10moalk9bcu8u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "132564343334-01t68g3lh42oe1v4dipopoj7tnpib829.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.appgym"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

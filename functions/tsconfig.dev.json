@@ -1,0 +1,20 @@
+// D:\APP Projecto\appgym\functions\tsconfig.dev.json
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "lib",
+    // Si index.ts está en la raíz de functions, rootDir puede ser "." o "./"
+    // o puedes omitirlo si outDir es el único que quieres especificar relativo a la raíz
+    "rootDir": ".",
+    "sourceMap": true
+  },
+  "include": [
+    "*.ts", // <--- ¡Añade esta línea para incluir archivos .ts en la raíz de functions!
+    "src/**/*.ts" // Mantenemos esta por si tienes otros archivos en 'src'
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "lib" // Asegúrate de excluir la carpeta de salida
+  ]
+}
