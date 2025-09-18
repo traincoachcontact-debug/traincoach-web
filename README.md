@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # appgym
 
 A new Flutter project.
@@ -14,3 +15,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# traincoach-web
+>>>>>>> 56490d5089530c1de844e12859d851e4849f18f7
