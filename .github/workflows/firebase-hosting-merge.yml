@@ -32,4 +32,4 @@ jobs:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
           channelId: live
-          projectId: traincoach-XXXXX  # <-- reemplaza con tu ID real de Firebase
+          projectId: traincoach-2ef9d
