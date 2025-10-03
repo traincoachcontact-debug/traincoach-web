@@ -11,10 +11,10 @@ Misión: guiar con seguridad, eficacia y constancia. Explica el "por qué".
 
 Usuario:
 - Nombre: ${p.displayName ?? "N/A"}
-- Edad: ${p.edad ?? "N/A"} | Sexo: ${p.sexo ?? "N/A"}
-- Altura: ${p.altura_cm ?? "N/A"} cm | Peso: ${p.peso_kg ?? "N/A"} kg
+- Edad: ${p.age ?? "N/A"} | Sexo: ${p.sex ?? "N/A"}
+- Altura: ${p.heightcm ?? "N/A"} cm | Peso: ${p.peso ?? "N/A"} kg
 - Objetivo: ${p.objetivo ?? "N/A"}
-- Experiencia: ${p.experiencia ?? "N/A"}
+- Experiencia: ${p.XP ?? "N/A"}
 - Días/semana: ${p.diasSemana ?? "N/A"} | Min/sesión: ${p.minutosSesion ?? "N/A"}
 - Equipo: ${p.equipo ?? "N/A"}
 - Lesiones/condiciones: ${p.lesiones ?? p.condiciones ?? "N/A"}
@@ -48,8 +48,8 @@ Misión: hábitos sostenibles; sin mitos ni dietas milagro.
 
 Usuario:
 - Objetivo salud: ${p.objetivosNutri ?? p.objetivo ?? "N/A"}
-- Edad/Sexo: ${p.edad ?? "N/A"} / ${p.sexo ?? "N/A"}
-- Altura/Peso: ${p.altura_cm ?? "N/A"} cm / ${p.peso_kg ?? "N/A"} kg
+- Edad/Sexo: ${p.age ?? "N/A"} / ${p.sex ?? "N/A"}
+- Altura/Peso: ${p.heightcm ?? "N/A"} cm / ${p.peso ?? "N/A"} kg
 - Alergias/intolerancias: ${p.alergias ?? "N/A"}
 - Preferencias/cultura: ${p.preferencias ?? "N/A"}
 - Condiciones médicas: ${p.condiciones ?? "N/A"}
@@ -76,7 +76,7 @@ export function buildProgressPrompt(p: UserProfile, extra: string) {
 Rol: "Coach Pro".
 Tarea: analizar progreso y proponer micro-ajustes seguros.
 
-Datos usuario (resumen): edad ${p.edad ?? "N/A"}, objetivo ${p.objetivo ?? "N/A"}, días ${p.diasSemana ?? "N/A"}, min ${p.minutosSesion ?? "N/A"}.
+Datos usuario (resumen): edad ${p.age ?? "N/A"}, objetivo ${p.objetivo ?? "N/A"}, días ${p.diasSemana ?? "N/A"}, min ${p.minutosSesion ?? "N/A"}.
 Entrada de progreso del usuario: ${extra || "N/A"}
 
 Salida:

@@ -28,7 +28,9 @@ function App() {
           <Route path="/progress-assistant" element={<ProgressAssistantScreen />} />
           <Route path="/nutrition" element={<NutritionScreen />} />
           <Route path="/routine-assistant" element={<RoutineAssistantScreen />} />
-          <Route path="/LoginPage" element={<LoginPage />} />
+          <Route path="/membership" element={<MembershipPage />} />
+          {/* 👇 cambio aquí */}
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
       </MainLayout>
     </Router>

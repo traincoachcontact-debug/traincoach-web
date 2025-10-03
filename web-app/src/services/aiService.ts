@@ -24,7 +24,7 @@ export type UserProfile = {
   activityLevel?: string;
   goals?: string[];
   schedule?: string;
-  experience?: string;
+  XP?: string;
   daysPerWeek?: number;
   injuries?: string[];
 };
@@ -85,7 +85,7 @@ function profileToBullets(p?: Partial<UserProfile>): string {
     list("Alimentos que no le gustan", p.dislikes) +
     list("Enfermedades/diagnósticos", p.diseases) +
     list("Medicaciones", p.medications) +
-    kv("Experiencia en gimnasio", p.experience) +
+    kv("Experiencia en gimnasio", p.XP) +
     kv("Días por semana (entreno)", p.daysPerWeek) +
     list("Lesiones/dolores", p.injuries)
   ).trim();

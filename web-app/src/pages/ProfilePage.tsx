@@ -5,7 +5,7 @@ import { useAuth } from "../contexts/AuthContext";
 import type { UserProfile } from "../types";
 
 const init: UserProfile = {
-  sexo: "Otro",
+  sex: "Otro",
   diasSemana: 3,
   minutosSesion: 45,
 };
@@ -59,18 +59,18 @@ export default function ProfilePage() {
           <input type="date" className="input" value={form.birthdate ?? ""} onChange={(e) => set("birthdate", e.target.value)} />
         </label>
         <label className="flex flex-col">Edad (auto)
-          <input className="input" value={form.edad ?? ""} readOnly />
+          <input className="input" value={form.age ?? ""} readOnly />
         </label>
         <label className="flex flex-col">Sexo
-          <select className="input" value={form.sexo ?? ""} onChange={(e) => set("sexo", e.target.value)}>
+          <select className="input" value={form.sex ?? ""} onChange={(e) => set("sex", e.target.value)}>
             <option>Otro</option><option>M</option><option>F</option>
           </select>
         </label>
         <label className="flex flex-col">Altura (cm)
-          <input type="number" className="input" value={form.altura_cm ?? ""} onChange={(e) => set("altura_cm", Number(e.target.value))} />
+          <input type="number" className="input" value={form.heightcm ?? ""} onChange={(e) => set("heightcm", Number(e.target.value))} />
         </label>
         <label className="flex flex-col">Peso (kg)
-          <input type="number" className="input" value={form.peso_kg ?? ""} onChange={(e) => set("peso_kg", Number(e.target.value))} />
+          <input type="number" className="input" value={form.peso ?? ""} onChange={(e) => set("peso", Number(e.target.value))} />
         </label>
       </section>
 
@@ -82,7 +82,7 @@ export default function ProfilePage() {
             <input className="input" value={form.objetivo ?? ""} onChange={(e) => set("objetivo", e.target.value)} />
           </label>
           <label className="flex flex-col">Experiencia
-            <select className="input" value={form.experiencia ?? ""} onChange={(e) => set("experiencia", e.target.value)}>
+            <select className="input" value={form.experience ?? ""} onChange={(e) => set("experience", e.target.value)}>
               <option>Principiante</option><option>Intermedio</option><option>Avanzado</option>
             </select>
           </label>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function HomePage() {
   return (
     <div className="flex flex-col items-center justify-center text-center p-6">
@@ -14,7 +16,7 @@ export default function HomePage() {
       </h1>
 
       {/* Descripción */}
-      <p className="text-lg text-white-700 max-w-xl">
+      <p className="text-lg text-gray-700 max-w-xl">
         Tu entrenador personal y asesor nutricional inteligente.
         Con TrainCoach puedes crear rutinas personalizadas, recibir
         asesoría nutricional, chatear con otros usuarios y llevar un
@@ -22,19 +24,20 @@ export default function HomePage() {
       </p>
 
       {/* Botón de suscripción */}
-      <a
-        href="/membership"
+      <Link
+        to="/membership"
         className="mt-8 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg shadow-md transition-colors"
       >
         Suscríbete ahora
-      </a>
-      {/* Iniciar Sesion */}
-      <a
-        href="LoginPage"
-        className="mt-8 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg shadow-md transition-colors"
+      </Link>
+
+      {/* Iniciar Sesión */}
+      <Link
+        to="/login"
+        className="mt-4 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg shadow-md transition-colors"
       >
-        Iniciar Sesion
-      </a>
+        Iniciar Sesión
+      </Link>
     </div>
   );
 }

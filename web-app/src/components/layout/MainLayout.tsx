@@ -1,7 +1,12 @@
 import Sidebar from "./Sidebar";
 import BottomNav from "./BottomNav";
+import React from "react";
 
-export default function MainLayout({ children }: { children: React.ReactNode }) {
+interface MainLayoutProps {
+  children: React.ReactNode;
+}
+
+export default function MainLayout({ children }: MainLayoutProps) {
   return (
     <div className="flex min-h-screen bg-gray-100">
       {/* Barra lateral */}
@@ -14,7 +19,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
         {children}
       </main>
 
-      {/* Barra inferior para cell */}
+      {/* Barra inferior para celular */}
       <div className="md:hidden">
         <BottomNav />
       </div>
